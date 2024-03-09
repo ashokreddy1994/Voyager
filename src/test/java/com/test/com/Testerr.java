@@ -27,7 +27,7 @@ public class Testerr {
 		WebDriver driver=new EdgeDriver();
 		driver.get("https://google.com");
 		driver.manage().window().maximize();
-		Thread.sleep(5000);
+	//	Thread.sleep(5000);
 		driver.findElement(By.name("q")).sendKeys("Selenium");
 		Thread.sleep(5000);
 		driver.close();
