@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-08T18:43:29 IST" name="Suite" finished-at="2024-03-08T18:43:55 IST" duration-ms="25597">
+  <suite started-at="2024-03-09T11:48:27 IST" name="Default suite" finished-at="2024-03-09T11:48:45 IST" duration-ms="18110">
     <groups>
     </groups>
-    <test started-at="2024-03-08T18:43:29 IST" name="Test" finished-at="2024-03-08T18:43:55 IST" duration-ms="25597">
+    <test started-at="2024-03-09T11:48:27 IST" name="Default test" finished-at="2024-03-09T11:48:45 IST" duration-ms="18110">
       <class name="com.test.com.Testerr">
-        <test-method signature="calculate()[pri:0, instance:com.test.com.Testerr@53fe15ff]" started-at="2024-03-08T18:43:30 IST" name="calculate" finished-at="2024-03-08T18:43:55 IST" duration-ms="25533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- calculate -->
-        <test-method signature="calculate1()[pri:0, instance:com.test.com.Testerr@53fe15ff]" started-at="2024-03-08T18:43:30 IST" name="calculate1" finished-at="2024-03-08T18:43:54 IST" duration-ms="24784" status="PASS">
+        <test-method signature="calculate1()[pri:0, instance:com.test.com.Testerr@78e4deb0]" started-at="2024-03-09T11:48:27 IST" name="calculate1" finished-at="2024-03-09T11:48:45 IST" duration-ms="18033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calculate1 -->
       </class> <!-- com.test.com.Testerr -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
