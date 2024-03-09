@@ -16,7 +16,7 @@ public class Testerr {
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
 		driver.findElement(By.name("q")).sendKeys("Automation");
-		Thread.sleep(5000);
+	//	Thread.sleep(5000);
 		driver.close();
 		
 	}
