@@ -13,6 +13,9 @@ public class Testerr extends Base {
 	@Test(priority=0)
 	public void calculat3() throws Exception {
 		System.out.println("test1");
+		String methodName=new Object() {}.getClass().getEnclosingMethod().getName();
+		logger=extent.createTest(this.getClass().getSimpleName() +" - "+methodName);
+		extentTest.set(logger);
 		id=10;
 		objects=new PageObject(driver.get());
 		objects.searchOprations("Selenium");
@@ -21,6 +24,9 @@ public class Testerr extends Base {
 	@Test(priority=1)
 	public void calculate4() throws Exception {
 		System.out.println("test2");
+		String methodName=new Object() {}.getClass().getEnclosingMethod().getName();
+		logger=extent.createTest(this.getClass().getSimpleName() +" - "+methodName);
+		extentTest.set(logger);
 		System.out.println(id);
 		objects=new PageObject(driver.get());
 		objects.searchOprations("Java");
