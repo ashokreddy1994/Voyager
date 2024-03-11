@@ -6,32 +6,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class Testerr {
+public class Testerr extends Base {
+	PageObject objects;
+	int id;
 
-	@Test
-	public void calculate() throws Exception {
-		System.out.println("Test");
-		WebDriver driver=new ChromeDriver();
-		driver.get("https://google.com");
-		driver.manage().window().maximize();
-		Thread.sleep(5000);
-		driver.findElement(By.name("q")).sendKeys("Automation");
-	//	Thread.sleep(5000);
-		driver.close();
-		
+	@Test(priority=0)
+	public void calculat3() throws Exception {
+		System.out.println("test1");
+		id=10;
+		objects=new PageObject(driver.get());
+		objects.searchOprations("Selenium");
 	}
 	
-	@Test
-	public void calculate1() throws Exception {
-		System.out.println("Test");
-		WebDriver driver=new EdgeDriver();
-		driver.get("https://google.com");
-		driver.manage().window().maximize();
-		Thread.sleep(5000);
-		driver.findElement(By.name("q")).sendKeys("Selenium");
-		Thread.sleep(5000);
-		driver.close();
-		
+	@Test(priority=1)
+	public void calculate4() throws Exception {
+		System.out.println("test2");
+		System.out.println(id);
+		objects=new PageObject(driver.get());
+		objects.searchOprations("Java");
 	}
 	
 	

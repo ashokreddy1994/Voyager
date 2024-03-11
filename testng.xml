@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" thread-count="4" parallel="tests">
 	
-  <test thread-count="2" name="Test" parallel="methods">
+	
+  <test  name="Test" >
+	  <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.test.com.Testerr"/>
+      <class name="com.test.com.Tester2"/>
+      
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test2" >
+	  <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="com.test.com.Testerr"/>
+      <class name="com.test.com.Tester2"/>
+      
     </classes>
   </test> <!-- Test -->
   
