@@ -10,8 +10,9 @@ public class Tester2 extends Base{
 	@Test(priority=0)
 	public void calculate() throws Exception {
 		String methodName=new Object() {}.getClass().getEnclosingMethod().getName();
-	//	logger=extent.createTest(this.getClass().getSimpleName() +" - "+methodName);
-	//	extentTest.set(logger);
+		logger=extent.createTest(this.getClass().getSimpleName() +" - "+methodName+"-"+browserName);
+		extentTest.set(logger);
+		logger.info("broser invoked "+browserName);
 		System.out.println("test3");
 		name="ashok";
 		objects=new PageObject(driver.get());
@@ -22,8 +23,9 @@ public class Tester2 extends Base{
 	public void calculate1() throws Exception {
 		System.out.println("test4");
 		String methodName=new Object() {}.getClass().getEnclosingMethod().getName();
-	//	logger=extent.createTest(this.getClass().getSimpleName() +" - "+methodName);
-	//	extentTest.set(logger);
+		logger=extent.createTest(this.getClass().getSimpleName() +" - "+methodName+"-"+browserName);
+		extentTest.set(logger);
+		logger.info("broser invoked "+browserName);
 		System.out.println(name);
 		objects=new PageObject(driver.get());
 		objects.searchOprations("NodeJS");
